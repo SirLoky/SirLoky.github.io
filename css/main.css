@@ -1,11 +1,34 @@
+/* Estilos generales del sitio */
 html {
     scroll-behavior: smooth;
 }
 
-.subtitle{
+/* Estilos para subtítulos */
+.subtitle {
     font-weight: bold;
 }
 
-.programming-languages i{
+/* Tamaño de fuente para íconos de lenguajes de programación */
+.programming-languages i {
     font-size: 7em;
+}
+
+/* Estilos de fondo para sección de la página */
+.section {
+    background: linear-gradient(to bottom, #3498db, #2980b9); /* Gradiente de azul */
+    color: white; /* Texto en blanco para contraste */
+}
+
+/* Estilos para las tarjetas de contenido */
+.card {
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
 }

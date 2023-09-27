@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,33 +9,46 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/main.css"> <!-- Archivo CSS principal -->
+    <link rel="stylesheet" href="./css/menu.css"> <!-- Archivo CSS para el menú -->
+
+    <style>
+        /* Estilo personalizado para la tarjeta de Sobre Mi */
+        .sobre-mi-card {
+            border: 2px solid #007BFF;
+            border-radius: 10px;
+        }
+
+        .sobre-mi-card .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #007BFF;
+        }
+
+        .sobre-mi-card .card-text {
+            font-size: 1.2rem;
+        }
+    </style>
 
     <title>Portafolio - Cristhian Vargas</title>
 </head>
 
 <body>
-
-
-
-
     <div class="main-wrapper">
         <div class="section row">
             <!-- Navbar fullsize -->
-            <div class=" col-4 d-none d-lg-block bg-light">
-                <div class="section row align-items-center position-fixed ">
-
+            <div class="col-4 d-none d-lg-block bg-light">
+                <div class="section row align-items-center position-fixed">
                     <div class="col p-">
                         <div class="row row-cols-1 m-5">
                             <div class="col">
-
                                 <div class="card text-center bg-light">
-                                    <h1 class="logo m-3 p-4"><img src="/imagenes/perfil.jpeg" width="200" height="200"></h1>
+                                    <h1 class="logo m-3 p-4"><img src="imagen/perfil.jpeg" width="200" height="200"
+                                            alt="Imagen de perfil de Cristhian Vargas"></h1>
                                     <div class="card-footer">
-                                        <p class="class-text m-0 "> <i class="bi bi-github"></i> <a
-                                                href="https://sirloky.github.io/"
-                                                class="text-decoration-none">@sirloky</a></p>
+                                        <p class="class-text m-0 "><i class="bi bi-github"></i> <a
+                                                href="https://github.com/cristhianvargastecsupaqp"
+                                                class="text-decoration-none">@cristhianvargastecsupaqp</a></p>
                                     </div>
                                 </div>
                                 <div class="col">
@@ -48,266 +61,88 @@
                                                 class="text-decoration-none text-dark">Formación</a></li>
                                         <li class="list-group-item text-center  bg-light"><a href="#timeline"
                                                 class="text-decoration-none text-dark">Linea de Tiempo</a></li>
-                                        <li class="list-group-item text-center  bg-light"><a href="#"
+                                        <li class="list-group-item text-center  bg-light"><a href="#mi-trabajo"
                                                 class="text-decoration-none text-dark">Mi trabajo</a></li>
-                                        <!-- <li class="list-group-item text-center  bg-light"><a href="#" class="text-decoration-none text-dark">Curriculum</a></li> -->
                                     </ul>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
 
             <!-- Content of the page -->
             <div class="col-8">
-
-                <div class="container">
-
-                    <!-- Welcome section -->
-                    <h3 class="subtitle m-1 mt-3 font-monospace" id="welcome">Bienvenido</h3>
+                <!-- Bienvenido - Agrega tu información aquí -->
+                <div id="welcome" class="mt-5">
+                    <h3 class="subtitle m-1 mt-3 font-monospace section-title">Bienvenido</h3>
                     <div class="card mt-2">
                         <div class="card-body">
-                            <h5 class="card-title">Hola <i class="bi bi-emoji-laughing" style="color:orange"></i> </h5>
-                            <p class="card-text">
-                                Este es mi sitio web donde puedes encontrar informacion sobre los proyectos donde
-                                trabaje , y tambien los proyectos donde actualmente trabajo.
-                            </p>
-                            <p class="card-text">
-                                Los principales propositos de esta pagina son:
-
-                            </p>
-                            <ul>
-                                <li>
-                                    Primero , poder compartir esta pagina como portafolio y que la gente me conozca
-                                </li>
-                                <li>
-                                    Segundo , mantener informado a mis seguidores sobre nuevos proyectos y nuevos
-                                    estudios.
-                                </li>
-                            </ul>
-
-                            <p class="card-text">
-                                Espero de <i class="bi bi-heart-fill " style="color:red"></i> que te guste el contenido
-                            </p>
+                            <!-- Agrega aquí tu mensaje de bienvenida -->
                         </div>
-
                     </div>
                     <hr>
-
-                    <!-- Education and Information Section
-
-                    - Currently Education
-                    - List of programming languages
-                    - List of languages
-                    - Experience
-                -->
-
-                    <h3 class="subtitle m-1 mt-3 font-monospace" id="sobremi">Sobre Mi</h3>
-                    <div class="card mt-2">
-                        <div class="card-body">
-
-                            <p class="card-text">
-                                Mi nombre es Cristhian Vargas soy egresado de tecsup y me apasiona la tecnologia y la
-                                innovación , me interesa :
-                            </p>
-                            <ul>
-                                <li>
-                                    La programacion web <i class="bi bi-display" style="color:red"></i> y movil <i class="bi bi-phone" style="color:blue"></i>
-                                </li>
-                                <li>
-                                    Cloud computing e infraestructurea de Servidores <i class="bi bi-server" style="color:orange"></i>.
-                                </li>
-                                <li>
-                                    Machine learning y Data Science <i class="bi bi-box" style="color:green"></i>
-                                </li>
-                            </ul>
-
-
-                        </div>
-
-                    </div>
-                    <hr>
-                    <h3 class="subtitle m-1 mt-3 font-monospace" id="education">Formación</h3>
-
-                    <h5 class="subtitle m-1 mt-4">Formación Profesional</h5>
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">2013 | Tecnico en Redes y Comunicaciones de Datos</li>
-                        <li class="list-group-item">2015 | Certificacion CCNA</li>
-                        <li class="list-group-item">2018 | Certificacion Cloud Computing</li>
-                        <li class="list-group-item">2019 | Certificacion BIg Data y Machine Learning</li>
-                    </ul>
-                    <h5 class="subtitle m-1 mt-4">Idiomas</h5>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Español: Nativo</li>
-                        <li class="list-group-item">Ingles: Intermedio</li>
-                    </ul>
-                    <h5 class="subtitle m-1 mt-4">Tecnologias y Lenguajes de Programación</h5>
-
-                    <p class="m-3"> Lenguajes de Programación</p>
-
-                    <div class="card container">
-
-                        <div class="row programming-languages row-cols-3 text-center m-4">
-                            <div class="col ">
-                                <i class="devicon-javascript-plain"></i>
-                            </div>
-                            <div class="col">
-                                <i class="devicon-php-plain colored"></i>
-                            </div>
-                            <div class="col">
-                                <i class="devicon-python-plain-wordmark"></i>
-                            </div>
-
-                            <div class="col mt-3">
-                                <i class="devicon-angularjs-plain colored"></i>
-                            </div>
-
-                            <div class="col mt-3">
-                                <i class="devicon-symfony-original-wordmark colored"></i>
-                            </div>
-                            <div class="col mt-3">
-                                <i class="devicon-laravel-plain-wordmark colored"></i>
-                            </div>
-                            <div class="col mt-3">
-                                <i class="devicon-git-plain colored"></i>
-                            </div>
-                            <div class="col mt-3">
-                                <i class="devicon-nodejs-plain-wordmark colored"></i>
-                            </div>
-                            <div class="col mt-3">
-                                <i class="devicon-android-plain colored"></i>
-                            </div>
-
-
-                        </div>
-
-
-                    </div>
-                    <p class="m-3"> Infraestructura</p>
-
-                    <div class="card container">
-
-                        <div class="row programming-languages row-cols-3 text-center m-4">
-                            <div class="col ">
-                                <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
-                            </div>
-                            <div class="col">
-                                <i class="devicon-azure-plain-wordmark colored"></i>
-                            </div>
-                            <div class="col">
-                                <i class="devicon-linux-plain colored"></i>
-                            </div>
-
-                            <div class="col mt-3">
-                                <i class="devicon-windows8-original colored"></i>
-                            </div>
-
-                            <div class="col mt-3">
-                                <i class="devicon-docker-plain colored"></i>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-
-
-                    <p class="m-3">
-
-
-
-                        <hr>
-                        <!-- Timeline Section -->
-                    <h3 class="subtitle m-1 mt-3 font-monospace" id="timeline">Linea de Tiempo</h3>
-
-                    <div class="row">
-
-
-                        <div class="col-2  d-none d-lg-block">
-                            <div class="timeline">
-
-                                <div class="roundItem mt-3">
-                                    <div class="year">Dic. 2013 </div>
-
-                                </div>
-                                <div class="roundItem mt-4">
-                                    <div class="lineUp"></div>
-                                    <div class="year">Ene. 2014</div>
-
-                                </div>
-                                <div class="roundItem mt-4">
-                                    <div class="lineUp"></div>
-                                    <div class="year"> Marzo 2015 </div>
-                                </div>
-                                <div class="roundItem mt-4">
-                                    <div class="lineUp"></div>
-                                    <div class="year"> Abril 2019 </div>
-
-                                </div>
-                                <div class="roundItem mt-4">
-                                    <div class="lineUp"></div>
-                                    <div class="year"> Mayo 2020 </div>
-
-                                </div>
-                                <div class="roundItem mt-4">
-                                    <div class="lineUp"></div>
-                                    <div class="year"> Junio 2022 </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-10 col-sm-12 p-0">
-                            <ul class="list-group">
-                                <li class="list-group-item"><a href="#" class="text-decoration-none">TECSUP - 2013</a>
-                                    <p class="text-muted m-0">Culmine con exito mi carrera. </p>
-                                </li>
-                                <li class="list-group-item"><a href="#" class="text-decoration-none">SUNARP - 2014</a>
-                                    <p class="text-muted m-0">Realize mis practicas Profesionales </p>
-                                </li>
-                                <li class="list-group-item"><a href="#" class="text-decoration-none">LOBO SISTEMAS - 2015</a>
-                                    <p class="text-muted m-0">Realize Proyectos para empresas contratistas </p>
-                                </li>
-                                <li class="list-group-item"><a href="#" class="text-decoration-none">SERMEDI - 2019</a>
-                                    <p class="text-muted m-0">Tiempo Completo en Clinica Sermedi </p>
-                                </li>
-                                <li class="list-group-item"><a href="#" class="text-decoration-none">PROYECTO SISTEMA PARA COVID - 2020
-                            </a>
-                                    <p class="text-muted m-0">Proyecto desarrollado en Laravel y Vue JS </p>
-                                </li>
-                                <li class="list-group-item"><a href="#" class="text-decoration-none">PROYECTO PARA ESTILOS - 2022
-                                       </a>
-                                    <p class="text-muted m-0">Proyecto para la tiensa ESTILOS para gestionar promociones </p>
-                                </li>
-                               
-                            </ul>
-
-
-                        </div>
-                    </div>
-
-
                 </div>
 
+                <!-- Sobre Mi - Agrega tu información personal aquí -->
+                <div id="sobremi" class="mt-5">
+                    <h3 class="subtitle m-1 mt-3 font-monospace section-title">Sobre Mi</h3>
+                    <div class="card mt-2 sobre-mi-card">
+                        <div class="card-body">
+                            <!-- Aquí puedes agregar tu información personal -->
+                            <h5 class="card-title">¡Hola! Soy Cristhian Vargas</h5>
+                            <p class="card-text">
+                                Soy un apasionado de la tecnología y la innovación. Me especializo en programación web y móvil, cloud computing, machine learning y data science.
+                            </p>
+                            <!-- Puedes continuar añadiendo más detalles sobre ti aquí -->
+                        </div>
+                    </div>
+                    <hr>
+                </div>
 
+                <!-- Formación - Agrega tu información sobre educación aquí -->
+                <div id="education" class="mt-5">
+                    <h3 class="subtitle m-1 mt-3 font-monospace section-title">Formación</h3>
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <!-- Agrega aquí tu información sobre tu formación académica -->
+                        </div>
+                    </div>
+                    <hr>
+                </div>
 
+                <!-- Linea de Tiempo - Agrega tu información cronológica aquí -->
+                <div id="timeline" class="mt-5">
+                    <h3 class="subtitle m-1 mt-3 font-monospace section-title">Linea de Tiempo</h3>
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <!-- Agrega aquí tu línea de tiempo -->
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+
+                <!-- Mi trabajo - Agrega información sobre tu trabajo aquí -->
+                <div id="mi-trabajo" class="mt-5">
+                    <h3 class="subtitle m-1 mt-3 font-monospace section-title">Mi Trabajo</h3>
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <!-- Agrega información sobre tu trabajo o proyectos aquí -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resto de tu contenido aquí -->
+                <!-- ... -->
             </div>
         </div>
+    </div>
 
-        <footer>
+    <footer></footer>
 
-        </footer>
-
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-            crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

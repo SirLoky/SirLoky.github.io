@@ -1,148 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/main.css"> <!-- Archivo CSS principal -->
-    <link rel="stylesheet" href="./css/menu.css"> <!-- Archivo CSS para el menú -->
-
-    <style>
-        /* Estilo personalizado para la tarjeta de Sobre Mi */
-        .sobre-mi-card {
-            border: 2px solid #007BFF;
-            border-radius: 10px;
-        }
-
-        .sobre-mi-card .card-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #007BFF;
-        }
-
-        .sobre-mi-card .card-text {
-            font-size: 1.2rem;
-        }
-    </style>
-
-    <title>Portafolio - Cristhian Vargas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Mi Portafolio</title>
 </head>
-
 <body>
-    <div class="main-wrapper">
-        <div class="section row">
-            <!-- Navbar fullsize -->
-            <div class="col-4 d-none d-lg-block bg-light">
-                <div class="section row align-items-center position-fixed">
-                    <div class="col p-">
-                        <div class="row row-cols-1 m-5">
-                            <div class="col">
-                                <div class="card text-center bg-light">
-                                    <h1 class="logo m-3 p-4"><img src="imagen/perfil.jpeg" width="200" height="200"
-                                            alt="Imagen de perfil de Cristhian Vargas"></h1>
-                                    <div class="card-footer">
-                                        <p class="class-text m-0 "><i class="bi bi-github"></i> <a
-                                                href="https://github.com/cristhianvargastecsupaqp"
-                                                class="text-decoration-none">@cristhianvargastecsupaqp</a></p>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <ul class="list-group list-group-flush font-monospace mt-1">
-                                        <li class="list-group-item text-center  bg-light "><a href="#welcome"
-                                                class="text-decoration-none text-dark">Bienvenido</a></li>
-                                        <li class="list-group-item text-center  bg-light"><a href="#sobremi"
-                                                class="text-decoration-none text-dark">Sobre mi</a></li>
-                                        <li class="list-group-item text-center  bg-light"><a href="#education"
-                                                class="text-decoration-none text-dark">Formación</a></li>
-                                        <li class="list-group-item text-center  bg-light"><a href="#timeline"
-                                                class="text-decoration-none text-dark">Linea de Tiempo</a></li>
-                                        <li class="list-group-item text-center  bg-light"><a href="#mi-trabajo"
-                                                class="text-decoration-none text-dark">Mi trabajo</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <header class="header">
+        <h1 class="title">Bienvenidos</h1>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#sobreMi">Sobre Mí</a></li>
+                <li class="nav-item"><a href="#estudios">Estudios</a></li>
+                <li class="nav-item"><a href="#pasiones">Pasiones</a></li>
+                <li class="nav-item"><a href="#idiomas">Idiomas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobreMi" class="info-section">
+            <div class="info-box">
+                <h2>Sobre Mí</h2>
+                <p>¡Hola! Soy Enrique Apaza Dario, un apasionado por la tecnología y el desarrollo web.</p>
             </div>
-
-            <!-- Content of the page -->
-            <div class="col-8">
-                <!-- Bienvenido - Agrega tu información aquí -->
-                <div id="welcome" class="mt-5">
-                    <h3 class="subtitle m-1 mt-3 font-monospace section-title">Bienvenido</h3>
-                    <div class="card mt-2">
-                        <div class="card-body">
-                            <!-- Agrega aquí tu mensaje de bienvenida -->
-                        </div>
-                    </div>
-                    <hr>
-                </div>
-
-                <!-- Sobre Mi - Agrega tu información personal aquí -->
-                <div id="sobremi" class="mt-5">
-                    <h3 class="subtitle m-1 mt-3 font-monospace section-title">Sobre Mi</h3>
-                    <div class="card mt-2 sobre-mi-card">
-                        <div class="card-body">
-                            <!-- Aquí puedes agregar tu información personal -->
-                            <h5 class="card-title">¡Hola! Soy Cristhian Vargas</h5>
-                            <p class="card-text">
-                                Soy un apasionado de la tecnología y la innovación. Me especializo en programación web y móvil, cloud computing, machine learning y data science.
-                            </p>
-                            <!-- Puedes continuar añadiendo más detalles sobre ti aquí -->
-                        </div>
-                    </div>
-                    <hr>
-                </div>
-
-                <!-- Formación - Agrega tu información sobre educación aquí -->
-                <div id="education" class="mt-5">
-                    <h3 class="subtitle m-1 mt-3 font-monospace section-title">Formación</h3>
-                    <div class="card mt-2">
-                        <div class="card-body">
-                            <!-- Agrega aquí tu información sobre tu formación académica -->
-                        </div>
-                    </div>
-                    <hr>
-                </div>
-
-                <!-- Linea de Tiempo - Agrega tu información cronológica aquí -->
-                <div id="timeline" class="mt-5">
-                    <h3 class="subtitle m-1 mt-3 font-monospace section-title">Linea de Tiempo</h3>
-                    <div class="card mt-2">
-                        <div class="card-body">
-                            <!-- Agrega aquí tu línea de tiempo -->
-                        </div>
-                    </div>
-                    <hr>
-                </div>
-
-                <!-- Mi trabajo - Agrega información sobre tu trabajo aquí -->
-                <div id="mi-trabajo" class="mt-5">
-                    <h3 class="subtitle m-1 mt-3 font-monospace section-title">Mi Trabajo</h3>
-                    <div class="card mt-2">
-                        <div class="card-body">
-                            <!-- Agrega información sobre tu trabajo o proyectos aquí -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Resto de tu contenido aquí -->
-                <!-- ... -->
+            <div class="image-box">
+                <img src="imagen/perfil.jpeg" alt="Tu Foto" class="profile-image">
             </div>
-        </div>
-    </div>
+        </section>
 
-    <footer></footer>
+        <section id="estudios" class="info-section">
+            <div class="info-box">
+                <h2>Estudios</h2>
+                <p>He obtenido un certificado en Python avanzado donde me capacite en 3 meses, tambien tengo un certificado avanzado en Base de datos Oracle</p>
+            </div>
+            <div class="image-box">
+                <!-- Aquí puedes agregar otra imagen relacionada con tus estudios si lo deseas -->
+            </div>
+        </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-        crossorigin="anonymous"></script>
+        <section id="pasiones" class="info-section">
+            <div class="info-box">
+                <h2>Pasiones</h2>
+                <p>Mis pasiones incluyen programar, aprender nuevas tecnologías y explorar el mundo del desarrollo web.</p>
+            </div>
+            <div class="image-box">
+                <!-- Aquí puedes agregar una imagen relacionada con tus pasiones si lo deseas -->
+            </div>
+        </section>
+
+        <section id="idiomas" class="info-section">
+            <div class="info-box">
+                <h2>Idiomas</h2>
+                <p>Hablo español de manera nativa y tengo conocimientos intermedios de inglés.</p>
+            </div>
+            <div class="image-box">
+                <!-- Aquí puedes agregar una imagen relacionada con los idiomas si lo deseas -->
+            </div>
+        </section>
+    </main>
 </body>
-
 </html>

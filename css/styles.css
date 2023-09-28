@@ -1,0 +1,96 @@
+/* Reset de estilos para eliminar márgenes y rellenos predeterminados */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+.header {
+    background-color: #f0f0f0;
+    color: rgb(0, 0, 0);
+    border-radius: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 1.0);
+    border: 2px solid #007BFF;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Estilos de la barra de navegación */
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-item a:hover {
+    color: #0056b3;
+}
+
+/* Estilos de las secciones de información */
+.info-section {
+    background-color: #f0f0f0;
+    border-radius: 65px;
+    padding: 20px;
+    margin: 20px; /* Aumentado el margen para separar más las secciones */
+    margin-right: 150px;
+    margin-left: 150px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 1.0);
+    overflow: hidden; /* Evita que los márgenes choquen con la imagen */
+    border: 2px solid #007BFF;
+}
+
+.info-box {
+    padding: 20px;
+    margin-right: 50%; /* Margen hasta la mitad del cuadro */
+    float: left;
+    width: 50%; /* Ancho para ocupar la mitad del cuadro */
+}
+
+.info-box h2 {
+    color: #007BFF;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 16px;
+}
+
+/* Estilos de la imagen de perfil */
+.profile-image {
+    max-width: 250px;
+    max-height: 250px;
+    float: right; /* Alinea la imagen a la derecha */
+    margin-left: 20px; /* Añade un margen izquierdo para separar la imagen del texto */
+    margin-top: 0px; /* Mueve la imagen hacia abajo 20px */
+    margin-bottom: 80px;   /* Mueve la imagen hacia arriba 20px */
+    margin-right: 100px; /* Mueve la imagen derecha 20px */
+    border: 2px solid #007BFF; /* Agrega un contorno a la imagen */
+    border-radius: 20px; /* Redondea los bordes del contorno */
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+}

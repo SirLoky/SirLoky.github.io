@@ -79,8 +79,8 @@ body, h1, h2, h3, p, ul, li {
 
 /* Estilos de la imagen de perfil */
 .profile-image {
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 350px;
+    max-height: 350px;
     float: right; /* Alinea la imagen a la derecha */
     margin-left: 20px; /* Añade un margen izquierdo para separar la imagen del texto */
     margin-top: 0px; /* Mueve la imagen hacia abajo 20px */

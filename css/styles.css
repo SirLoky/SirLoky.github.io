@@ -6,8 +6,8 @@ body, h1, h2, h3, p, ul, li {
 
 /* Estilos del encabezado */
 .header {
-    background-color: #f0f0f0;
-    color: rgb(0, 0, 0);
+    background-color: #393636;
+    color: rgb(17, 108, 211);
     border-radius: 100px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -49,12 +49,14 @@ body, h1, h2, h3, p, ul, li {
 
 /* Estilos de las secciones de información */
 .info-section {
-    background-color: #f0f0f0;
+    background-color: #393636;
     border-radius: 65px;
-    padding: 20px;
+    padding: 5% 50px;
     margin: 20px; /* Aumentado el margen para separar más las secciones */
     margin-right: 150px;
     margin-left: 150px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 1.0);
     overflow: hidden; /* Evita que los márgenes choquen con la imagen */
     border: 2px solid #007BFF;
@@ -62,9 +64,8 @@ body, h1, h2, h3, p, ul, li {
 
 .info-box {
     padding: 20px;
-    margin-right: 50%; /* Margen hasta la mitad del cuadro */
-    float: left;
     width: 50%; /* Ancho para ocupar la mitad del cuadro */
+    float: left;
 }
 
 .info-box h2 {
@@ -74,7 +75,7 @@ body, h1, h2, h3, p, ul, li {
 }
 
 .info-box p {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 /* Estilos de la imagen de perfil */
@@ -82,10 +83,10 @@ body, h1, h2, h3, p, ul, li {
     max-width: 350px;
     max-height: 350px;
     float: right; /* Alinea la imagen a la derecha */
-    margin-left: 20px; /* Añade un margen izquierdo para separar la imagen del texto */
-    margin-top: 0px; /* Mueve la imagen hacia abajo 20px */
-    margin-bottom: 80px;   /* Mueve la imagen hacia arriba 20px */
-    margin-right: 100px; /* Mueve la imagen derecha 20px */
+    margin-left: 10px; /* Añade un margen izquierdo para separar la imagen del texto */
+    margin-top: 10px; /* Mueve la imagen hacia abajo 10px */
+    margin-bottom: 10px; /* Mueve la imagen hacia arriba 20px */
+    margin-right: 20px; /* Mueve la imagen hacia la derecha 20px */
     border: 2px solid #007BFF; /* Agrega un contorno a la imagen */
     border-radius: 20px; /* Redondea los bordes del contorno */
 }
@@ -93,4 +94,33 @@ body, h1, h2, h3, p, ul, li {
 /* Estilo general */
 body {
     font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #17202A; /* Primer color de fondo */
+    transition: background-color 1s; /* Transición de 1 segundo */
+}
+
+body:hover {
+    background-color: #1C2833; /* Segundo color de fondo */
+}
+
+body:hover:hover {
+    background-color: #212F3D; /* Tercer color de fondo */
+}
+
+body:hover:hover:hover {
+    background-color: #273746; /* Cuarto color de fondo */
+}
+
+body:hover:hover:hover:hover {
+    background-color: #2C3E50; /* Quinto color de fondo */
+}
+
+body:hover:hover:hover:hover:hover {
+    background-color: #566573; /* Sexto color de fondo */
+}
+
+body:hover:hover:hover:hover:hover:hover {
+    background-color: #808B96; /* Séptimo color de fondo */
 }
